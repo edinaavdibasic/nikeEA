@@ -1,0 +1,86 @@
+body{
+	background-color: black;
+	font-family: fontimport;
+	letter-spacing: 2px;
+}
+@font-face{
+	
+	font-family:fontimport;
+	src:url("../Font/Nike Ithaca.otf");
+	
+}
+#logo{
+	text-align: center;		
+	-webkit-animation: color_change 3s infinite linear;
+	margin-bottom: 2%;
+}
+#wrap{
+	margin: auto;
+	width:1200px;
+	clear:both;
+	overflow:hidden;
+}
+#top{
+	max-height: 100px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+#left{
+	margin: 0% auto;
+	max-width: 50%;
+	height: 450px;
+	float: left;
+}
+#right{
+	margin: 0% auto;
+	max-width: 50%;
+	height: 450px;
+	float: left;
+}
+#bottom{	
+	margin: 7% auto;
+	max-height:200px;
+	width: 100%;
+	float: left;	
+	text-align: center;	
+	font-family: fontimport;
+	font-size: 100px;
+	padding: 20px 32px;
+	-webkit-animation: color_change 3s infinite linear;
+}
+
+#bezier{
+	margin-top: -540px;
+	display:none;
+}
+
+#svg{
+	margin-top: -340px;
+	padding-top: 0%;
+	padding-left: 20%;
+	display:none;
+}
+
+.button{
+	font-family: fontimport;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin: 3% 3%;
+	border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+	width: 230px;
+	-webkit-animation: color_change 3s infinite linear;
+}
+@-webkit-keyframes color_change {
+	20% { background-color: #ffff80; }
+	46% { background-color: #ffccff; }
+	63% { background-color: #bb99ff; }
+	82% { background-color: #99ccff; }
+	93% { background-color: #ccffe6; }
+	0%, 100% { background-color: #ffb3b3; }
+	
+}

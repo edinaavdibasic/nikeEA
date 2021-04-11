@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>NIKE</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+	<div id="wrap">
+		<div id="logo"> <img src="Slike/logo.png" alt=""> </div>
+		<div id="top">
+			<button class="button" onclick="SVG();"> <b>&#8681 </b> SVG <b>&#8681 </b> </button>
+			<button class="button" onclick="Bezier();"> <b>&#8681 </b> BEZIER <b>&#8681 </b> </button>
+		</div>
+		
+			<script>
+				function SVG() {
+					var x = document.getElementById("svg");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
+					}
+				}
+				function Bezier() {
+					var x = document.getElementById("bezier");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
+					}
+				}
+			</script>
+		
+		<div id="left">
+			<img src="Slike/shoe.png" alt="">
+			
+			<div id="svg">
+				<svg xmlns="http://www.w3.org/2000/svg"
+					 width="56.4573mm" height="56.4573mm"
+					viewBox="0 0 160 160">
+					<path id="Unnamed"
+						fill="black" stroke="black" stroke-width="1"
+						d="M 30.25,54.50
+						   C 22.00,73.00 20.75,92.00 58.50,80.75
+							 58.50,80.75 152.00,54.50 152.00,54.50
+							 152.00,54.50 48.50,101.25 48.50,101.25
+							 7.25,117.75 -5.00,91.50 30.25,54.50 Z" />
+				</svg>
+			</div>
+			
+		</div>
+		
+		<div id="right">
+			<img src="Slike/Shirt.png" alt="">
+			
+			<div id="bezier">
+				<canvas id="myCanvas" width="400" height="400"></canvas>
+				<script>
+				  var canvas = document.getElementById('myCanvas');
+				  var context = canvas.getContext('2d');
+
+				  context.beginPath();
+				  context.moveTo(242, 150);
+					context.bezierCurveTo(162, 200, 212, 280, 402, 150);
+					context.bezierCurveTo(367, 160, 212, 240, 242, 150);
+				  
+				 
+				  context.lineWidth = 1;
+				  context.fillStyle="#000";
+				  context.fill();
+
+				  // line color
+				  context.strokeStyle = 'white';
+				  context.stroke();
+				</script>
+			</div>
+			
+		</div>
+	<div id="bottom">
+		<a>JUST DO IT&#8228 </a>
+	</div>
+	</div>
+  </body>
+</html>      
